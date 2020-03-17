@@ -1,3 +1,91 @@
+// Variables referencing all html elements
+var start = document.getElementById("start");
+var start = document.getElementById("quiz");
+var start = document.getElementById("question");
+var start = document.getElementById("choices");
+var start = document.getElementById("A");
+var start = document.getElementById("B");
+var start = document.getElementById("C");
+var start = document.getElementById("D");
+var start = document.getElementById("timer");
+var start = document.getElementById("totalTime");
+var start = document.getElementById("currentTime");
+var start = document.getElementById("counter");
+var start = document.getElementById("scoreArea");
+
+// Variables created to alleviate array values 
+var lastQuestionIndex = question.length -1;
+var runningQuestionIndex = 0;
+renderQuestion()
+
+runningQuestionIndex++ 
+renderQuestion()
+
+// Layout that is used to display all questions 
+function renderQuestion(){
+    var q = question[runningQuestionIndex];
+    question.innerHTML = "<h2>" + q.question + "</h2>";
+    choiceA.innerHTML = q.choiceA;
+    choiceB.innerHTML = q.choiceB;
+    choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
+}
+
+
+
+// Array to store all questions, possible answers, and correct answer
+var questions = [ 
+    {
+    question : "Question 1 goes here?",
+    choiceA : "Choice 1 goes here?",
+    choiceB : "Choice 2 goes here?",
+    choiceC : "Choice 3 goes here?",
+    choiceD : "Choice 4 goes here?",
+    correct : "Correct Answer Herer"    
+    },
+    {
+    question : "Question 2 goes here?",
+    choiceA : "Choice 1 goes here?",
+    choiceB : "Choice 2 goes here?",
+    choiceC : "Choice 3 goes here?",
+    choiceD : "Choice 4 goes here?",
+    correct : "Correct Answer Herer"   
+    },
+    {
+    question : "Question 3 goes here?",
+    choiceA : "Choice 1 goes here?",
+    choiceB : "Choice 2 goes here?",
+    choiceC : "Choice 3 goes here?",
+    choiceD : "Choice 4 goes here?",
+    correct : "Correct Answer Herer"   
+    },
+    {
+    question : "Question 4 goes here?",
+    choiceA : "Choice 1 goes here?",
+    choiceB : "Choice 2 goes here?",
+    choiceC : "Choice 3 goes here?",
+    choiceD : "Choice 4 goes here?",
+    correct : "Correct Answer Herer"   
+    },
+    {
+    question : "Question 5 goes here?",
+    choiceA : "Choice 1 goes here?",
+    choiceB : "Choice 2 goes here?",
+    choiceC : "Choice 3 goes here?",
+    choiceD : "Choice 4 goes here?",
+    correct : "Correct Answer Herer"   
+    }
+];
+
+
+
+
+
+
+
+
+
+
 // Build a timed code quiz with multiple-choice questions. 
 // This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. 
 // It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.

@@ -6,26 +6,70 @@
     <title>Document</title>
 </head>
 <body>
+    
+
     <!-- field that displays score -->
     <!-- Make a quiz -->
     <!-- Quiz has a start page -->
+    <div id="start">
+        <h1>It's Quiz time!</h1>
+
+    </div>
         <!-- Start page has a text title -->
         <!-- Start page has a start button -->
+
     <!-- Quiz has a quiz section of page -->
-        <!-- countdown commences  -->
-        <!-- timer is displayed once quiz starts -->
-        <!-- Question field is displayed once quiz starts  -->
-        <!-- Possible answers are displayed once quiz starts  -->
+    <div id="quiz">
         
-        <!-- once user selects their answer  -->
+        <!-- Question field is displayed once quiz starts  -->
+        <div id="question">
+            <h2>Question Goes Here</h2>
+        </div>
+
+        <!-- Timer elements to track duration of quiz -->
+        <div id="timer">
+            <div id="counter"></div>
+            <div id="totalTime"></div>
+            <div id="currentTime"></div>
+        </div>
+
+        <!-- Possible answers are displayed once quiz starts  -->
+        <div id="choices">
+            <div id="A" class="choice"  onclick="checkAnswer('A')">A</div>
+            <div id="B" class="choice"  onclick="checkAnswer('B')">A</div>
+            <div id="C" class="choice"  onclick="checkAnswer('C')">A</div>
+            <div id="D" class="choice"  onclick="checkAnswer('D')">A</div>
+        </div>
+        
         <!-- correct field displayed if user answer is correct  -->
         <!-- incorrect field displayed if user answer is incorrect -->
+        <div id="validAnswers">
+
+        </div>
+
+
+    </div>
+
+    <!-- highscore is displayed during start page -->
+    <!-- highscore is displayed during question and answer -->  
+    <div id="scoreArea">
+
+
+    </div>
+        
+        <!-- countdown commences  -->
+        <!-- timer is displayed once quiz starts -->
+        
+        
+        <!-- once user selects their answer  -->
+        
+        
 
     <!-- Quiz ends when all questions answered or timer runs out -->
-    <!-- highscore is displayed during start page -->
-    <!-- highscore is displayed during question and answer -->
+    
+    
 
-    <!-- Quiz has an end page  -->
+        <!-- Quiz has an end page  -->
         <!-- field that displays score is not present -->
         <!-- field for player to input initials -->
 </body>
