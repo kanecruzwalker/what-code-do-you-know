@@ -1,102 +1,22 @@
 // Variables referencing all html elements
 var start = document.getElementById("start");
-var start = document.getElementById("quiz");
-var start = document.getElementById("question");
-var start = document.getElementById("choices");
-var start = document.getElementById("A");
-var start = document.getElementById("B");
-var start = document.getElementById("C");
-var start = document.getElementById("D");
-var start = document.getElementById("timer");
-var start = document.getElementById("totalTime");
-var start = document.getElementById("currentTime");
-var start = document.getElementById("counter");
-var start = document.getElementById("scoreArea");
+var quiz = document.getElementById("quiz");
+var question = document.getElementById("question");
+var choices = document.getElementById("choices");
+var A = document.getElementById("A");
+var B = document.getElementById("B");
+var C = document.getElementById("C");
+var D = document.getElementById("D");
+var timer = document.getElementById("timer");
+var totalTime = document.getElementById("totalTime");
+var currentTime = document.getElementById("currentTime");
+var counter = document.getElementById("counter");
+var scoreArea = document.getElementById("scoreArea");
+var validity = document.getElementById("validity");
+var startButton = document.getElementbyId("startButton");
 
-// Variables created to alleviate array values 
-var lastQuestionIndex = question.length -1;
-var runningQuestionIndex = 0;
-renderQuestion()
+startButton.addEventListener("click", startQuiz)
 
-runningQuestionIndex++ 
-renderQuestion()
-
-// Layout that is used to display all questions 
-function renderQuestion(){
-    var q = question[runningQuestionIndex];
-    question.innerHTML = "<h2>" + q.question + "</h2>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-    choiceD.innerHTML = q.choiceD;
-}
-
-
-
-// Array to store all questions, possible answers, and correct answer
-var questions = [ 
-    {
-    question : "Question 1 goes here?",
-    choiceA : "Choice 1 goes here?",
-    choiceB : "Choice 2 goes here?",
-    choiceC : "Choice 3 goes here?",
-    choiceD : "Choice 4 goes here?",
-    correct : "Correct Answer Herer"    
-    },
-    {
-    question : "Question 2 goes here?",
-    choiceA : "Choice 1 goes here?",
-    choiceB : "Choice 2 goes here?",
-    choiceC : "Choice 3 goes here?",
-    choiceD : "Choice 4 goes here?",
-    correct : "Correct Answer Herer"   
-    },
-    {
-    question : "Question 3 goes here?",
-    choiceA : "Choice 1 goes here?",
-    choiceB : "Choice 2 goes here?",
-    choiceC : "Choice 3 goes here?",
-    choiceD : "Choice 4 goes here?",
-    correct : "Correct Answer Herer"   
-    },
-    {
-    question : "Question 4 goes here?",
-    choiceA : "Choice 1 goes here?",
-    choiceB : "Choice 2 goes here?",
-    choiceC : "Choice 3 goes here?",
-    choiceD : "Choice 4 goes here?",
-    correct : "Correct Answer Herer"   
-    },
-    {
-    question : "Question 5 goes here?",
-    choiceA : "Choice 1 goes here?",
-    choiceB : "Choice 2 goes here?",
-    choiceC : "Choice 3 goes here?",
-    choiceD : "Choice 4 goes here?",
-    correct : "Correct Answer Herer"   
-    }
-];
-
-
-
-
-
-
-
-
-
-
-// Build a timed code quiz with multiple-choice questions. 
-// This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. 
-// It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
-
-
-// I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-// SO THAT I can gauge my progress compared to my peers
-// ```
-// GIVEN I am taking a code quiz
-
-// WHEN I click the start button
 // There must be a start page 
 // There must be start button that prompts the begining of the game 
 
